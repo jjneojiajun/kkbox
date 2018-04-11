@@ -6,6 +6,8 @@ Basically, this project is predicting whether the user will churn or not. This i
 
 The Data Files are huge and thus you can download them @ (https://www.kaggle.com/c/kkbox-churn-prediction-challenge)
 
+If you don't want to process the data, you can download the processed data here @ (https://drive.google.com/open?id=1vUhvSJJigcQ4K_NNsMSYlqI3HHM5OkL3)
+
 The reason I didn't do train_test_split is simply because i wanted more data for prediction and thus i didn't do any train_test_split. 
 
 The data set is rather heavy, it will take about 15-30 minutes to complete running 20 epochs.

@@ -133,25 +133,30 @@ date_dict = {'t_':'transaction_date', 'm_':'membership_expire_date', \
 print("Creating date columns... ")
 
 for key in date_dict:  
+    if key == 'r_':
         train[key+'month'] = [d.month for d in train[date_dict[key]]]
+        train[key+'day'] = [d.day for d in train[date_dict[key]]]
+    else:
         train[key+'day'] = [d.day for d in train[date_dict[key]]]
 
 train['transaction_date'] = [d.year + (d.month-1) / 12 + d.day / 365 for d in train['transaction_date']]
 train['membership_expire_date'] = [d.year + (d.month-1) / 12 + d.day / 365 for d in train['membership_expire_date']]
 train['registration_init_time'] = [d.year + (d.month-1) / 12 + d.day / 365 for d in train['registration_init_time']]
-train['user_log_date'] = [d.year + (d.month-1) / 12 + d.day / 365 for d in train['user_log_date']]
+train['last_user_log_date'] = [d.year + (d.month-1) / 12 + d.day / 365 for d in train['last_user_log_date']]
 print("Done!")
 
 print("Creating date columns for test... ")
-
 for key in date_dict:  
-    test[key+'month'] = [d.month for d in train[date_dict[key]]]
-    test[key+'day'] = [d.day for d in train[date_dict[key]]]
+    if key == 'r_':
+        test[key+'month'] = [d.month for d in test[date_dict[key]]]
+        test[key+'day'] = [d.day for d in test[date_dict[key]]]
+    else:
+        test[key+'day'] = [d.day for d in test[date_dict[key]]]
 
 test['transaction_date'] = [d.year + (d.month-1) / 12 + d.day / 365 for d in test['transaction_date']]
 test['membership_expire_date'] = [d.year + (d.month-1) / 12 + d.day / 365 for d in test['membership_expire_date']]
 test['registration_init_time'] = [d.year + (d.month-1) / 12 + d.day / 365 for d in test['registration_init_time']]
-test['user_log_date'] = [d.year + (d.month-1) / 12 + d.day / 365 for d in test['user_log_date']]
+test['last_user_log_date'] = [d.year + (d.month-1) / 12 + d.day / 365 for d in test['last_user_log_date']]
 print("Done!")
 
 # get the feature of whether user automatically renew and not cancel and vice versa
