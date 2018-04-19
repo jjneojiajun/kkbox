@@ -20,20 +20,22 @@ Basically, you can just git clone this repository and you will be able to run th
 
 ### Running the Code
 `python ann.py` - To get the ann to predict the results with sorted_test_v2.csv and sorted_train_v2.csv
-`python random_forest.py` - To get the random forest to predict the results with sorted_test_v2.csv and sorted_train_v2.csv
 
 ### Prerequisites
 
 Tensorflow <= 1.0
 Numpy
 Pandas 
+Sci-Kit Learn
+
+### Additional Files
+`random_forest_v2.ipynb` - a basic jupyter notebook file to predict using random forest. The processing time is about 30 minutes for this file.
+
+`Artifical Neural Network With Splits.ipynb` - a basic jupyter notebook file to generate the artifical neural network with confusion matrix since I took the whole dataset. 
+
+You can run each of the files separately. The code base is build to be able to handle preprocessing data, final result productions, random forest prediction as well as artifical neural network with train test split. 
 
 ## Authors
 
-* **JiaJun Neo** - *Initial work* - [jjneojiajun](https://github.com/jjneojiajun)
-
-## Acknowledgments
-
-* Zi hao Xu for summary statistics / dtype fixing
-* Autocoder - (https://github.com/curiousily/Credit-Card-Fraud-Detection-using-Autoencoders-in-Keras/blob/master/fraud_detection.ipynb)
+* **JiaJun Neo** - [jjneojiajun](https://github.com/jjneojiajun)
 
