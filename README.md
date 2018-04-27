@@ -2,7 +2,7 @@
 
 Kaggle Competition - KKBOX Prediction.
 
-Basically, this project is predicting whether the user will churn or not. This is a binary classification problem. For myself, I build the Artifical Neural Network Model as well as a Random Forest after doing the feature engineering. Using the code base, I managed to get into top 20% of the competition, a pretty exciting feat if i were to say so myself.
+Basically, this project is predicting whether the user will churn or not. This is a binary classification problem. For myself, I build the Artifical Neural Network Model, XGBoost and a Random Forest after doing the feature engineering. Using the code base, I managed to get into top 20% of the competition, a pretty exciting feat if i were to say so myself.
 
 The Data Files are huge and thus you can download them @ (https://www.kaggle.com/c/kkbox-churn-prediction-challenge)
 
@@ -27,15 +27,21 @@ Tensorflow <= 1.0
 Numpy
 Pandas 
 Sci-Kit Learn
+XGBoost 
 
 ### Additional Files
 `random_forest_v2.ipynb` - a basic jupyter notebook file to predict using random forest. The processing time is about 30 minutes for this file.
 
 `Artifical Neural Network With Splits.ipynb` - a basic jupyter notebook file to generate the artifical neural network with confusion matrix since I took the whole dataset. 
 
+`XGBoost.ipynb` - a basic jupyter notebook file to generate the XGBoost with confusion matrix
+
 You can run each of the files separately. The code base is build to be able to handle preprocessing data, final result productions, random forest prediction as well as artifical neural network with train test split. 
 
 ## Authors
 
-* **JiaJun Neo** - [jjneojiajun](https://github.com/jjneojiajun)
+* **JiaJun Neo**
+* **Koh Ji Peng** 
+* **Mcvie Chua**
+* **Wong Wei Jun**
 
